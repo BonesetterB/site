@@ -117,3 +117,28 @@ body {
     background-color: black;
     height: 100px; 
 }
+.Review{
+    text-align: center;
+    position: relative;
+    top: 99px;
+    background-color: #68C766;
+}
+.SystemRequest{
+    text-align: center;
+    position: relative;
+    top: 99px;
+    background-color: #68C766;
+}
+
+.Comends{
+    text-align: center;
+    position: relative;
+    top: 99px;
+    background-color: #68C766;
+}
+.Tema{
+    text-align: center;
+    position: relative;
+    top: 99px;
+    background-color: #68C766;
+}
