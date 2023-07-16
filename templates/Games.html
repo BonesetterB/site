@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="mainn.css">
-    <title>Games</title>
-</head>
-<body>
-    <div class="Paneli">
-        <h1 class="texth1">Log/Sign</h1>
-        <h1 class="texth1">Games</h1>
-        <h1 class="texth1">News</h1>
-        <h1 class="texth1">Forums</h1>
-    </div>
+{% extends 'base.html' %}
+
+{% block title %} Games {% endblock %}
+{% block content %}
+    
     <div class="new_games">
         <h1 class='Titles'>NEW GAMES</h1>
 
@@ -53,7 +43,5 @@
             <p>Description 3</p>
         </div>
     </div>
-    <div class="End">
-    </div>
-</body>
-</html>
+{% endblock %}
+

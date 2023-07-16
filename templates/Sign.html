@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Sign {% endblock %}
+{% block content %}
+<form action="/Sign" method="POST" class="sign">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    {% if error_email %}
+    <p class="error">{{ error_email }}</p>
+    {% endif %}
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    {% if error_username %}
+    <p class="error">{{ error_username }}</p>
+    {% endif %}
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+    {% if error_password %}
+    <p class="error">{{ error_password }}</p>
+    {% endif %}
+
+    <button type="submit">Register</button>
+</form>
+{% endblock %}

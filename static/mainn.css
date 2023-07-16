@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #000000;
+    background-color: #2fdfc8b0;
   }
 .Paneli{
     text-align: right;
@@ -10,26 +10,27 @@ body {
     width: 100%;
     height: 120px;
     background-color: #00400E;
+    z-index: 1000;
 }
 .new_games{
     
     text-align: center;
     position: relative;
     top: 99px;
-    background-color: #68C766;
+    background-color: #1aa13c98;
 }
 .Newss{
     text-align: center;
     top: 70px;
     position: relative;
-    background-color: #68C766;
+    background-color: #1fa767a8;
 }
   
 .Forums{
-    top: 70px;
+    top: 150px;
     position: relative;
     text-align: left;
-    background-color: #68C766;
+    background-color: #0ea72271;
 }
 
 .texth1 {
@@ -69,7 +70,7 @@ body {
 
 .Soc{
     text-align: center;
-    background-color: #68C766;
+    background-color: #00ffbf;
 }
 
 .sign {
@@ -78,7 +79,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 120px;
-    background-color: #68C766;
+    background-color: rgba(168, 159, 32, 0.637);
     font-size: 35px;
 }
 
@@ -99,7 +100,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 120px;
-    background-color: #68C766;
+    background-color: #1ed68a;
     font-size: 35px;
 }
 
@@ -121,24 +122,35 @@ body {
     text-align: center;
     position: relative;
     top: 99px;
-    background-color: #68C766;
+    background-color: #91c51870;
 }
 .SystemRequest{
     text-align: center;
     position: relative;
     top: 99px;
-    background-color: #68C766;
+    background-color: #7fcf2285;
 }
 
 .Comends{
     text-align: center;
     position: relative;
     top: 99px;
-    background-color: #68C766;
+    background-color: #ebebeb86;
 }
 .Tema{
     text-align: center;
     position: relative;
     top: 99px;
-    background-color: #68C766;
+    background-color: #e9e9e993;
+}
+.ppp{
+    font-size: 35px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 25px;
+    background-color: white;
 }

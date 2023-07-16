@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Forums {% endblock %}
+{% block content %}
+<div class="Forums">
+    <form action="/search" method="GET">
+        <input type="text" name="tags" placeholder="Search forums by tags">
+        <button type="submit">Search</button>
+    </form>
+    <h1>Forum 1</h1>
+    <h1>Forum 2</h1>
+    <h1>Forum 3</h1>
+    <h1>Forum 4</h1>
+    <h1>Forum 5</h1>
+    
+</div>
+{%endblock%}

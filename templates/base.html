@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='mainn.css')}}">
+    <title >{% block title %}{% endblock %} </title>
+</head>
+<body>
+    <nav class="Paneli">
+        <a class="texth1" href="{{ url_for('home.Games') }}">Games</a>
+        <a class="texth1" href="{{ url_for('home.News') }}">News</a>
+        <a class="texth1" href="{{ url_for('home.Forums') }}">Forums</a>
+        <a class="ppp" href="{{ url_for('home.Log') }}">Log</a>
+        <a class="ppp" href="{{ url_for('home.Sign') }}">/Sign</a>
+    </nav>
+    {% block content %} {% endblock %}
+    
+    <div class="End">
+    </div>
+</body>
+</html>
