@@ -1,5 +1,5 @@
 from flask import Blueprint,render_template, request,redirect
-from datebase.database import db
+from datebase.database import session
 from datebase.Modules import User
 
 home=Blueprint('home',"home")
@@ -76,8 +76,8 @@ def Sign():
 
         if not error_username and not error_password and not error_email:
             new_user = User(username=username, email=email, password=password)
-            db.session.add(new_user)
-            db.session.commit()
+            session.add(new_user)
+            session.commit()
 
             return redirect('/Log')
 
