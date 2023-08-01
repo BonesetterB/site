@@ -1,6 +1,6 @@
 from flask import Blueprint,render_template, request,redirect
-from database import db
-from Modules import User
+from datebase.database import db
+from datebase.Modules import User
 
 home=Blueprint('home',"home")
 
@@ -42,7 +42,8 @@ def Log():
         user = User.query.filter_by(username=username, password=password).first()
 
         if user:
-            return f'Welcome, {user.username}!'
+            login_user(user)
+            return redirect(url_for('dashboard'))
 
     return render_template('Log.html',username_error=username_error, password_error=password_error)
 

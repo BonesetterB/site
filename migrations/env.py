@@ -1,10 +1,10 @@
 from logging.config import fileConfig
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
-from database import db
+from datebase.database import db
 from alembic import context
 
-from Modules import User  
+from datebase.Modules import User  
 
 from app import app  
 

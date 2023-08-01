@@ -1,6 +1,6 @@
 from app import app
-from database import db
-from Modules import User
+from datebase.database import db
+from datebase.Modules import User
 
 username='Mike'
 email='camurau1992@gmail.com'
