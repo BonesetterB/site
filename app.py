@@ -1,8 +1,8 @@
 from flask import Flask
 from datebase.database import db
 from flask_migrate import Migrate
-from flask import Flask, render_template, redirect, url_for, request
-from flask_login import LoginManager, login_user, logout_user, login_required, current_user
+from flask import Flask
+from flask_login import LoginManager
 import secrets
 
 

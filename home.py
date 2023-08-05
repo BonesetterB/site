@@ -1,6 +1,6 @@
 from flask import Blueprint,render_template, request,redirect
 from datebase.database import session
-from datebase.Modules import User
+from datebase.Modules import User,Game
 
 home=Blueprint('home',"home")
 
